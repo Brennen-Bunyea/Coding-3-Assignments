@@ -42,9 +42,13 @@ public class Main
         salesmen[20] = new Salesman("Alex", 500);
 
         //call the function in Salesman to find the top5 salesmen
-        for(int i = 0; i < salesmen.length; i++)
-        {
+        Salesman[] top = TopFive(salesmen);
 
+        //Last step is to display the results to the screen
+        System.out.println("The Top 5 Salesmen by Revenue");
+        for(int i = 0; i < top.length; i++)
+        {
+            System.out.println((i + 1) + ". " + top[i].name + " $" + top[i].revenue);
         }
     }
 }
