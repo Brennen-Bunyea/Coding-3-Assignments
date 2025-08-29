@@ -29,6 +29,6 @@ public class TopFive
                 }
             }
         }
+        return topFive;
     }
-    return topFive;
 }

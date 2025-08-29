@@ -41,8 +41,6 @@ public class Main
         salesmen[19] = new Salesman("Malachi", 450);
         salesmen[20] = new Salesman("Alex", 500);
 
-        //call the function in Salesman to find the top5 salesmen
-        Salesman[] top = TopFive(salesmen);
 
         //Last step is to display the results to the screen
         System.out.println("The Top 5 Salesmen by Revenue");
