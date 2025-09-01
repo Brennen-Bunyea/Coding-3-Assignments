@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main
 {
     public static void main(String[] args)
@@ -14,9 +12,10 @@ public class Main
         //create the salesmen
         //Loop through the salesmen to get the top 5 with the highest sales
         //Store those top 5 in a new array
+        //return and display the top 5 array
 
         //creates the Salesman array needed to store the salesmen data
-        Salesman[] salesmen = new Salesman[21];
+        Salesman[] salesmen = new Salesman[20];
 
         //the salesmen data
         salesmen[0] = new Salesman("John", 100);
@@ -39,14 +38,16 @@ public class Main
         salesmen[17] = new Salesman("James", 400);
         salesmen[18] = new Salesman("Josh", 425);
         salesmen[19] = new Salesman("Malachi", 450);
-        salesmen[20] = new Salesman("Alex", 500);
 
+        //use the TopFive function built in TopFive to find the top 5 salesmen in the Salesmen[]
+        Salesman[] topFive = TopFive.TopFive(salesmen);
 
         //Last step is to display the results to the screen
-        System.out.println("The Top 5 Salesmen by Revenue");
-        for(int i = 0; i < top.length; i++)
+        System.out.println("Top 5 Salesmen by Sales:");
+        //loops through the topFive[] from the TopFive function to print the values
+        for(int i = 0; i < topFive.length; i++)
         {
-            System.out.println((i + 1) + ". " + top[i].name + " $" + top[i].revenue);
+            System.out.println(topFive[i].name + " $" + topFive[i].sales);
         }
     }
 }

@@ -10,13 +10,4 @@ class Salesman
         this.name = name;
         this.sales = sales;
     }
-
-    //function to find the top five salesmen
-    public void TopFive(Salesman[] allSalesmen)
-    {
-        for(Salesman current : allSalesmen)
-        {
-
-        }
-    }
 }
